@@ -1,0 +1,60 @@
+/* Typografy */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Grid */
+.grid {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-wrapper .demo {
+    background-color: #222222;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    padding: 16px;
+}
+
+.demo #span {
+    color: #49A6E9;
+}
+
+.button-wrapper {
+    display: flex;
+    column-gap: 10px;
+}
+
+.button-wrapper .btn {
+    background-color: transparent;
+    border: 1px solid  #222222;
+    border-radius: 5px;
+    color: #222222;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
