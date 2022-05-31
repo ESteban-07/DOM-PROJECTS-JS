@@ -1,5 +1,5 @@
 /* Typografy */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
 
 /* Global Styles */
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Grid */
@@ -24,7 +24,7 @@ body {
 
 .grid-wrapper .demo {
     background-color: #222222;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
@@ -36,7 +36,7 @@ body {
 }
 
 .demo #span {
-    color: #49A6E9;
+    color: #49a6e9;
 }
 
 .button-wrapper {
@@ -46,16 +46,16 @@ body {
 
 .button-wrapper .btn {
     background-color: transparent;
-    border: 2px solid  #222222;
+    border: 2px solid #222222;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     color: #222222;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     padding: 12px 20px;
     flex-grow: 1;
     cursor: pointer;
@@ -63,7 +63,7 @@ body {
 
 .button-wrapper .btn:hover {
     background-color: #222222;
-    color: #FFFFFF;
+    color: #ffffff;
     transition: all 0.3s linear;
 }
 
