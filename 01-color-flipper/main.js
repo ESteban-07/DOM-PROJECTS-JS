@@ -1,6 +1,6 @@
 // Variables
 const arrayColors = ['Red', 'Green', 'Rgba(133,122,200)', '#F15025'];
-const colorCode = '0123456789ABCDEF';
+const arrayHexCode = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
 const paragraph = document.getElementById('demo');
 const span = document.getElementById('span');
 const btnRandom = document.getElementById('btn-1');
@@ -14,7 +14,7 @@ btnReset.addEventListener("click", defaultColor);
 
 // Functions
 function randomBackground () {
-    const random = Math.floor(Math.random() * arrayColors.length);
+    const random = randomNumber(arrayColors.length);
     document.body.style.background = arrayColors[random];
     span.innerHTML = arrayColors[random];
 }
@@ -22,7 +22,7 @@ function randomBackground () {
 function hexadecimalBackground () {
     let color = '#';
     for (let i = 0; i < 6; i++)  {
-        color += colorCode[Math.floor(Math.random() * colorCode.length)];
+        color += arrayHexCode[randomNumber(arrayHexCode.length)];
     }
     document.body.style.background = color;
     span.innerHTML = color;
@@ -31,4 +31,8 @@ function hexadecimalBackground () {
 function defaultColor() {
     document.body.style.background = 'transparent';
     span.innerHTML = 'Default';
+}
+
+function randomNumber(length) {
+    return Math.floor(Math.random() * length);
 }
